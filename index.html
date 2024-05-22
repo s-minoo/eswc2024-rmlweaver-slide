@@ -1,35 +1,61 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <title>Shower Presentation Engine</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="node_modules/@shower/material/styles/styles.css">
-    <style>
-        .shower {
-            --slide-ratio: calc(4 / 3);
-        }
-    </style>
-</head>
-<body class="shower list">
+    <head>
+        <title>Shower Presentation Engine</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+            rel="stylesheet"
+            href="node_modules/@shower/material/styles/styles.css"
+        />
+        <link rel="stylesheet" href="custom.css" />
+        <style>
+            .shower {
+                --slide-ratio: calc(16 / 9);
+            }
+        </style>
+    </head>
+    <body class="shower list">
+        <header class="caption">
+            <h1>
+                RMLWeaver-JS: An algebraic mapping engine for KGCW challenge
+                2024
+            </h1>
+            <p>Sitt Min Oo - imec, IDLab, UGent</p>
+        </header>
 
-    <header class="caption">
-        <h1>Shower Presentation Engine</h1>
-        <p>Yours Truly, Famous Inc.</p>
-    </header>
+        <section class="slide">
+            <h1>
+                RMLWeaver-JS: An algebraic mapping engine for KGCW challenge
+                2024
+            </h1>
+            <p>Sitt Min Oo - imec, IDLab, UGent</p>
+            <!-- Create your first slide -->
+        </section>
 
-    <section class="slide">
-        <!-- Create your first slide -->
-    </section>
+        <section class="slide">
+            <h2>RMLWeaver-JS in Track 2</h2>
+            <ul>
+                <li>KG Construction Parameters</li>
+                <li>No GTFS support</li>
+            </ul>
+        </section>
 
-    <footer class="badge">
-        <a href="https://github.com/shower/shower">Fork me on GitHub</a>
-    </footer>
+        <section class="slide">
+            <h2>Algebraic mapping engine pipeline</h2>
+            <figure>
+                <img src="" alt=""/> 
+            <figcaption></figcaption>
+            </figure>
+        </section>
 
-    <div class="progress"></div>
+        <section class="slide">
+            <h2>Generates plan fast, executes the plan sloppily</h2>
+        </section>
 
-    <script src="node_modules/@shower/core/dist/shower.js"></script>
-    <!-- Copyright © 2024 Yours Truly, Famous Inc. -->
+        <div class="progress"></div>
 
-</body>
+        <script src="node_modules/@shower/core/dist/shower.js"></script>
+        <!-- Copyright © 2024 Yours Truly, Famous Inc. -->
+    </body>
 </html>

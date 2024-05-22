@@ -1,0 +1,22 @@
+.shower{
+    --color-key: #6BC25E;
+    --color-secondary: #0086E3
+}
+
+.caption h1 {
+    font-weight: bold;
+}
+.slide h2{
+    font-weight: bold;
+}
+
+
+.slide li::before{
+    font-size: 50px; 
+    color: var(--color-secondary);
+    transform: translateX(calc(-100% - 0.5em)) translateY(-23px); 
+
+}
+
+
+
