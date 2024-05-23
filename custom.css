@@ -1,0 +1,59 @@
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+}
+
+.shower {
+    --color-key: rgb(68, 130, 72);
+    --color-secondary: rgb(0, 86, 153);
+    --color-dark: rgb(75, 75, 75);
+}
+.slide {
+    padding-top: 60px;
+}
+
+.slide .shout {
+    padding-left: 0px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.slide p {
+    margin-bottom: 0;
+}
+.slide .authors {
+    color: var(--color-key);
+    font-weight: bold;
+}
+
+.slide .affliation {
+    color: var(--color-dark);
+    font-style: italic;
+}
+
+.slide .emph {
+    font-style: italic;
+}
+
+.slide .title {
+    color: var(--color-key);
+    font-weight: bold;
+}
+
+.slide .toc {
+    margin-top: 50px;
+    color: var(--color-medium);
+}
+.slide .sub {
+    transform: translateX(50px);
+}
+
+.slide .highlight {
+    color: var(--color-key);
+    font-weight: bold;
+}
