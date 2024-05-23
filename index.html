@@ -17,43 +17,174 @@
     </head>
     <body class="shower list">
         <header class="caption">
-            <h1>
+            <h1 class="title">
                 RMLWeaver-JS: An algebraic mapping engine for KGCW challenge
                 2024
             </h1>
-            <p>Sitt Min Oo - imec, IDLab, UGent</p>
+            <p>Sitt Min Oo, Tristan Verbeken, and Ben De Meester</p>
+            <p class="affliation">imec - IDLab - Ghent University</p>
         </header>
 
-        <section class="slide">
-            <h1>
+        <section class="slide clear">
+            <h1 class="title" style="line-height: 1.4">
                 RMLWeaver-JS: An algebraic mapping engine for KGCW challenge
                 2024
             </h1>
-            <p>Sitt Min Oo - imec, IDLab, UGent</p>
+            <span class="authors" style="text-decoration: underline"
+                >Sitt Min Oo,</span
+            >
+            <span class="authors">Tristan Verbeken, and</span>
+            <span class="authors">Ben De Meester</span>
+            <div class="affliation">
+                <span>imec - IDLab - Ghent University</span>
+            </div>
             <!-- Create your first slide -->
         </section>
 
-        <section class="slide">
-            <h2>RMLWeaver-JS in Track 2</h2>
-            <ul>
-                <li>KG Construction Parameters</li>
-                <li>No GTFS support</li>
-            </ul>
+        <section class="slide clear">
+            <h2 class="title">RMLWeaver-JS in Track 2 on KGC Parameters</h2>
+            <p class="highlight">Constant memory usage (500 MB)</p>
+            <p class="highlight">
+                Linear execution time increase wrt input size
+            </p>
+            <p class="highlight">Possible multiple mapping language support</p>
+            <p class="highlight">
+                Minimal mapping engine implementation changes
+            </p>
         </section>
 
-        <section class="slide">
-            <h2>Algebraic mapping engine pipeline</h2>
+        <section class="slide clear">
+            <h2 class="shout" style="font-size: 3.5em">
+                How is this performance possible for JavaScript?!
+            </h2>
+        </section>
+
+        <section class="slide clear">
+            <div class="toc">
+                <h3>Design choices</h3>
+                <h3>Implementation choices and limitations</h3>
+                <h3>Performance in Track 2</h3>
+            </div>
+        </section>
+
+        <section class="slide clear">
+            <div class="toc">
+                <h3 class="highlight">Design choices</h3>
+                <h3>Implementation choices and limitations</h3>
+                <h3>Performance in Track 2</h3>
+            </div>
+        </section>
+
+        <section class="slide clear">
+            <h2 class="title">Algebraic mapping engine pipeline</h2>
             <figure>
-                <img src="" alt=""/> 
-            <figcaption></figcaption>
+                <img
+                    style="margin-top: 40px; width: 96%"
+                    src="./figures/RMLWeaverjs_pipeline.drawio.svg"
+                    alt="An algebraic mapping engine pipeline for generating knowledge graph from heterogeneous data sources."
+                />
             </figure>
         </section>
 
-        <section class="slide">
-            <h2>Generates plan fast, executes the plan sloppily</h2>
+        <section class="slide clear">
+            <h2 class="title">Two independent steps of the mapping pipeline</h2>
+            <div class="container">
+                <figure
+                    class="next"
+                    style="text-align: center; padding: 0px 25px 0px 0px"
+                >
+                    <p
+                        class="highlight"
+                        style="line-height: normal; margin-top: 0.4em"
+                    >
+                        Interpretation of mapping language
+                    </p>
+                    <img
+                        src="./figures/interpretation_step.svg"
+                        style="width: 100%; margin-top: 50px"
+                    />
+                </figure>
+
+                <figure
+                    class="next"
+                    style="text-align: center; padding: 0px 0px 0px 25px"
+                >
+                    <p class="highlight">Execution of mapping process</p>
+                    <img
+                        src="./figures/mapping_step.svg"
+                        style="width: 100%; margin-top: 50px"
+                    />
+                </figure>
+            </div>
         </section>
 
-        <div class="progress"></div>
+        <section class="slide clear">
+            <h2 class="title">Reactive programming paradigm</h2>
+            <figure style="text-align: center">
+                <img src="./figures/hero.png" style="width: 80%" />
+            </figure>
+            <a
+                class="place bottom right"
+                style="margin-right: 20px; margin-bottom:10px"
+                href="https://tech.trivago.com/post/2021-03-16-java-reactive-programming-real-world"
+                >Image credit</a
+            >
+        </section>
+
+        <section class="slide clear">
+            <div class="toc">
+                <h3>Design choices</h3>
+                <h3 class="highlight">
+                    Implementation choices and limitations
+                </h3>
+                <h3>Performance in Track 2</h3>
+            </div>
+        </section>
+
+        <section class="slide clear">
+            <h2 class="title">Blazingly fast Rust interpreter</h2>
+
+            <p class="highlight">Overloaded safety checks</p>
+            <p class="sub">
+                If it compiles, it works <span class="emph">(mostly)</span>
+            </p>
+
+            <p class="highlight">Implement once, run everywhere</p>
+            <p class="sub">WebAssembly for browser</p>
+            <p class="sub">IoT devices</p>
+        </section>
+
+        <section class="slide clear">
+            <h2 class="title">Amazingly flexible JavaScript mapper</h2>
+            <p class="highlight">Fast prototyping</p>
+            <p class="sub">Implemented in 2 weeks by a bachelor student</p>
+            <p class="highlight">Mapping engine in the browser</p>
+            <p class="sub">Easier integration with frontend</p>
+            <p class="sub">No more running mapping engine on the server side</p>
+        </section>
+
+        <section class="slide clear">
+            <h2 class="title">Limitations of the PoC engines</h2>
+
+            <div class="container">
+                <div>
+                    <p class="highlight">Only CSV data sources</p>
+                </div>
+                <div>
+                    <p class="highlight">Only CSV data sources</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="slide clear">
+            <h2 class="title">Constant memory usage</h2>
+            <figure style="text-align: center">
+                <img
+                    src="./figures/mappings_measurements.svg"
+                    style="width: 80%"
+                />
+            </figure>
+        </section>
 
         <script src="node_modules/@shower/core/dist/shower.js"></script>
         <!-- Copyright © 2024 Yours Truly, Famous Inc. -->
