@@ -17,6 +17,16 @@ img {
     --color-secondary: rgb(0, 86, 153);
     --color-dark: rgb(75, 75, 75);
 }
+
+.ribbon {
+    background-color: var(--color-key);
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 30px;
+}
+
 .slide {
     padding-top: 60px;
 }
