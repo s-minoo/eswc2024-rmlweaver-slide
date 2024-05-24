@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link
             rel="stylesheet"
-            href="node_modules/@shower/material/styles/styles.css"
+            href="shower/themes/material/styles/styles.css"
         />
         <link rel="stylesheet" href="styles/custom.css" />
         <style>
@@ -30,6 +30,14 @@
                 RMLWeaver-JS: An algebraic mapping engine for KGCW challenge
                 2024
             </h1>
+
+            <figure style="text-align: center">
+                <img
+                    src="./figures/weaver.png"
+                    style="min-width: 0; width: 25%"
+                />
+            </figure>
+
             <span class="authors" style="text-decoration: underline"
                 >Sitt Min Oo,</span
             >
@@ -37,6 +45,20 @@
             <span class="authors">Ben De Meester</span>
             <div class="affliation">
                 <span>imec - IDLab - Ghent University</span>
+            </div>
+
+            <div
+                class="place bottom right"
+                style="
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                "
+            >
+                <img src="./figures/imec.png" style="width: 10%; height: 10%" />
+                <img src="./figures/idlab.svg" style="width: 15%" />
+
+                <img src="./figures/ugent.png" style="width: 15%" />
             </div>
             <!-- Create your first slide clear -->
         </section>
@@ -130,10 +152,7 @@
         <section class="slide clear">
             <h2 class="title">Constant memory usage of around 550MB</h2>
             <figure style="text-align: center">
-                <img
-                    src="./figures/mappings_measurements.svg"
-                    style="width: 80%"
-                />
+                <img src="./figures/mappings_memory.svg" style="width: 80%" />
             </figure>
         </section>
 
@@ -141,7 +160,7 @@
             <h2 class="title">Spike in execution time for 15TM-1POM</h2>
             <figure style="text-align: center">
                 <img
-                    src="./figures/mappings_measurements.svg"
+                    src="./figures/mappings_execution.svg"
                     style="width: 80%"
                 />
             </figure>
@@ -219,6 +238,19 @@
                     >https://github.com/RMLio/rmlweaver-js</a
                 >
             </p>
+            <div
+                class="place bottom right"
+                style="
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                "
+            >
+                <img src="./figures/imec.png" style="width: 10%; height: 10%" />
+                <img src="./figures/idlab.svg" style="width: 15%" />
+
+                <img src="./figures/ugent.png" style="width: 15%" />
+            </div>
         </section>
 
         <script src="shower/shower.js"></script>

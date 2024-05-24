@@ -4,6 +4,10 @@
     align-items: center;
 }
 
+img {
+    min-width: 0;
+}
+
 .container {
     display: flex;
 }
