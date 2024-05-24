@@ -220,7 +220,41 @@
             <h2 class="title">
                 Minimum of N,M determines the performance in Join N-M test case
             </h2>
+            <p class="highlight">Example test case of Join 10-5</p>
             <p class="mainpoint">Hash-join with two HashMaps for bookkeeping</p>
+            <p class="sub">
+                HashMap <sub>1</sub> for Source <sub>1</sub> with <b>10</b>
+                joinable records
+            </p>
+            <p class="sub">
+                HashMap <sub>2</sub> for Source <sub>2</sub> with <b>5</b>
+                joinable records
+            </p>
+        </section>
+
+        <section class="slide clear">
+            <h2 class="title">
+                Arrival order of the records has impact on join performance
+            </h2>
+            <p class="mainpoint">Ideal situation</p>
+            <p class="sub">
+                <b>5</b> joinable records arrive first from
+                <b>Source <sub>2</sub></b>
+            </p>
+            <p class="sub">
+                <b>5</b> iterations at <b>most</b> for joining with records from
+                <b> Source<sub>1</sub></b>
+            </p>
+
+            <p class="mainpoint">Worst situation</p>
+            <p class="sub">
+                <b>10</b> joinable records arrive first from
+                <b>Source <sub>1</sub></b>
+            </p>
+            <p class="sub">
+                Every record from <b>Source <sub>2</sub></b> results in
+                <b>10</b> iterations
+            </p>
         </section>
 
         <section class="slide clear">
