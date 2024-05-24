@@ -37,10 +37,6 @@ img {
     font-style: italic;
 }
 
-.slide .emph {
-    font-style: italic;
-}
-
 .slide .title {
     color: var(--color-key);
     font-weight: bold;
@@ -49,10 +45,6 @@ img {
 .slide .toc {
     margin-top: 50px;
     color: var(--color-medium);
-}
-.slide .sub {
-    transform: translateX(50px);
-    margin-bottom: 0px;
 }
 
 .slide .highlight {
@@ -63,6 +55,10 @@ img {
 .slide .mainpoint {
     color: var(--color-key);
     font-weight: bold;
+    margin-bottom: 0px;
+}
+.slide .sub {
+    transform: translateX(50px);
     margin-bottom: 0px;
 }
 
