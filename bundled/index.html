@@ -8,10 +8,10 @@
             rel="stylesheet"
             href="node_modules/@shower/material/styles/styles.css"
         />
-        <link rel="stylesheet" href="custom.css" />
+        <link rel="stylesheet" href="styles/custom.css" />
         <style>
             .shower {
-                --slide-ratio: calc(16 / 9);
+                --slide clear-ratio: calc(16 / 9);
             }
         </style>
     </head>
@@ -25,7 +25,7 @@
             <p class="affliation">imec - IDLab - Ghent University</p>
         </header>
 
-        <section class="slide ">
+        <section class="slide clear">
             <h1 class="title" style="line-height: 1.4">
                 RMLWeaver-JS: An algebraic mapping engine for KGCW challenge
                 2024
@@ -38,56 +38,18 @@
             <div class="affliation">
                 <span>imec - IDLab - Ghent University</span>
             </div>
-            <!-- Create your first slide -->
+            <!-- Create your first slide clear -->
         </section>
 
-        <section class="slide ">
+        <section class="slide clear">
             <h2 class="title">RMLWeaver-JS in Track 2 on KGC Parameters</h2>
-            <p class="highlight">Constant memory usage (550 MB)</p>
-            <p class="highlight">
-                Linear execution time increase wrt input size
-            </p>
-            <p class="highlight">Possible multiple mapping language support</p>
-            <p class="highlight">
-                Minimal mapping engine implementation changes
-            </p>
+            <p>Constant memory usage (550 MB)</p>
+            <p>Linear execution time increase wrt input size</p>
+            <p>Minimal mapping engine implementation changes</p>
         </section>
 
-        <section class="slide ">
-            <h2 class="shout" style="font-size: 3.5em">
-                How is this performance possible for JavaScript?!
-            </h2>
-        </section>
-
-        <section class="slide ">
-            <div class="toc">
-                <h3>Design choices</h3>
-                <h3>Implementation choices and limitations</h3>
-                <h3>Performance in Track 2</h3>
-            </div>
-        </section>
-
-        <section class="slide ">
-            <div class="toc">
-                <h3 class="highlight">Design choices</h3>
-                <h3>Implementation choices and limitations</h3>
-                <h3>Performance in Track 2</h3>
-            </div>
-        </section>
-
-        <section class="slide ">
-            <h2 class="title">Algebraic mapping engine pipeline</h2>
-            <figure>
-                <img
-                    style="margin-top: 40px; width: 96%"
-                    src="./figures/RMLWeaverjs_pipeline.drawio.svg"
-                    alt="An algebraic mapping engine pipeline for generating knowledge graph from heterogeneous data sources."
-                />
-            </figure>
-        </section>
-
-        <section class="slide ">
-            <h2 class="title">Two independent steps of the mapping pipeline</h2>
+        <section class="slide clear">
+            <h2 class="title">Algebraic mapping pipeline in 2 steps</h2>
             <div class="container">
                 <figure
                     class="next"
@@ -97,11 +59,11 @@
                         class="highlight"
                         style="line-height: normal; margin-top: 0.4em"
                     >
-                        Interpretation of mapping language
+                        Interpretation of RML in Rust
                     </p>
                     <img
                         src="./figures/interpretation_step.svg"
-                        style="width: 100%; margin-top: 50px"
+                        style="width: 100%; margin-top: 70px"
                     />
                 </figure>
 
@@ -109,15 +71,20 @@
                     class="next"
                     style="text-align: center; padding: 0px 0px 0px 25px"
                 >
-                    <p class="highlight">Execution of mapping process</p>
+                    <p
+                        class="highlight"
+                        style="line-height: normal; margin-top: 0.4em"
+                    >
+                        Execution of mapping process in JavaScript
+                    </p>
                     <img
                         src="./figures/mapping_step.svg"
-                        style="width: 100%; margin-top: 50px"
+                        style="width: 100%; margin-top: 40px"
                     />
                 </figure>
             </div>
         </section>
-        <section class="slide ">
+        <section class="slide clear">
             <h2 class="title">Algebraic mapping plan</h2>
             <figure>
                 <img
@@ -127,8 +94,8 @@
             </figure>
         </section>
 
-        <section class="slide ">
-            <h2 class="title">Reactive programming paradigm</h2>
+        <section class="slide clear">
+            <h2 class="title">Reactive programming paradigm with RxJS</h2>
             <figure style="text-align: center">
                 <img src="./figures/hero.png" style="width: 80%" />
             </figure>
@@ -140,53 +107,27 @@
             >
         </section>
 
-        <section class="slide ">
-            <div class="toc">
-                <h3>Design choices</h3>
-                <h3 class="highlight">
-                    Implementation choices and limitations
-                </h3>
-                <h3>Performance in Track 2</h3>
-            </div>
+        <section class="slide clear">
+            <h2 class="title">Limitations of the algebraic mapping engine</h2>
+            <p>Only support files with <b class="highlight">CSV formats</b></p>
+            <p>Does not ignore <b class="highlight">empty values</b></p>
+            <p>Does not remove <b class="highlight">duplicate triples</b></p>
         </section>
 
-        <section class="slide ">
-            <h2 class="title">Blazingly fast Rust interpreter</h2>
-
-            <p class="highlight">Overloaded safety checks</p>
-            <p class="sub">
-                If it compiles, it works <span class="emph">(mostly)</span>
+        <section class="slide clear">
+            <h2 class="title">Evaluation of RMLWeaver-JS in <br />Track 2</h2>
+            <p class="highlight">
+                Evaluated for Knowledge Graph Construction Parameters
             </p>
-            <p class="sub">As little bugs as possible</p>
-
-            <p class="highlight">Implement once, run everywhere</p>
-            <p class="sub">WebAssembly for browser</p>
-            <p class="sub">IoT devices</p>
+            <p class="mainpoint">Skip GTFS test cases</p>
+            <p class="sub">Interpreter does not handle self-joins</p>
+            <p class="sub">
+                Generation of 40 GB of triples for
+                <b class="highlight">heterogeneity</b> test
+            </p>
         </section>
 
-        <section class="slide ">
-            <h2 class="title">Amazingly flexible JavaScript mapper</h2>
-            <p class="highlight">Fast prototyping</p>
-            <p class="sub">Implemented in 2 weeks by a bachelor student</p>
-            <p class="highlight">Mapping engine in the browser</p>
-            <p class="sub">Easier integration with frontend</p>
-            <p class="sub">No more running mapping engine on the server side</p>
-        </section>
-
-        <section class="slide ">
-            <h2 class="title">Limitations of the PoC engines</h2>
-
-            <div class="container">
-                <div>
-                    <p class="highlight">Only CSV data sources</p>
-                </div>
-                <div>
-                    <p class="highlight">Only CSV data sources</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="slide ">
+        <section class="slide clear">
             <h2 class="title">Constant memory usage of around 550MB</h2>
             <figure style="text-align: center">
                 <img
@@ -196,7 +137,7 @@
             </figure>
         </section>
 
-        <section class="slide ">
+        <section class="slide clear">
             <h2 class="title">Spike in execution time for 15TM-1POM</h2>
             <figure style="text-align: center">
                 <img
@@ -206,15 +147,97 @@
             </figure>
         </section>
 
-        <section class="slide ">
-            <h2 class="title">Inefficient mapping plan generated for 15TM</h2>
+        <section class="slide clear">
+            <h2 class="title">
+                Inefficient mapping plan with duplicate source operators
+            </h2>
+            <figure style="text-align: center">
+                <img
+                    src="./figures/multiple_sources.svg"
+                    style="margin-top: 30px"
+                />
+            </figure>
         </section>
 
-        <section class="slide ">
-            <h2 class="title">Duplicate source operators can be merged</h2>
+        <section class="slide clear">
+            <h2 class="title">Same performance for Joins 5-5 and Joins 10-5</h2>
+            <table>
+                <tr>
+                    <th>Test case</th>
+                    <th>Execution time (s)</th>
+                    <th>CPU usage (s)</th>
+                    <th>Max RAM (MB)</th>
+                </tr>
+                <tr>
+                    <td>Join 5-5 25%</td>
+                    <td>35.2</td>
+                    <td>38.8</td>
+                    <td>673</td>
+                </tr>
+                <tr>
+                    <td>Join 5-5 100%</td>
+                    <td>82.0</td>
+                    <td>90.9</td>
+                    <td>814</td>
+                </tr>
+
+                <tr>
+                    <td>Join 10-5 25%</td>
+                    <td>35.2</td>
+                    <td>39.5</td>
+                    <td>661</td>
+                </tr>
+
+                <tr>
+                    <td>Join 10-5 100%</td>
+                    <td>82.3</td>
+                    <td>91.0</td>
+                    <td>784</td>
+                </tr>
+            </table>
+        </section>
+
+        <section class="slide clear">
+            <h2 class="title">
+                Minimum of N,M determines the performance in Join N-M test case
+            </h2>
+            <p class="mainpoint">Hash-join with two HashMaps for bookkeeping</p>
+        </section>
+
+        <section class="slide clear">
+            <h2 class="title">RMLWeaver-JS: An algebraic mapping engine</h2>
+            <p class="highlight">
+                Interpreter engine:
+                <a href="https://github.com/s-minoo/algemaploom-rs"
+                    >https://github.com/s-minoo/algemaploom-rs</a
+                >
+            </p>
+
+            <p class="highlight">
+                RMLWeaver-JS:
+                <a href="https://github.com/RMLio/rmlweaver-js"
+                    >https://github.com/RMLio/rmlweaver-js</a
+                >
+            </p>
         </section>
 
         <script src="shower/shower.js"></script>
         <!-- Copyright © 2024 Yours Truly, Famous Inc. -->
+
+        <footer>
+            <p class="license">
+                &#169; <span property="schema:copyrightYear">2024</span>
+                <a href="https://sminoo.be" rel="schema:copyrightHolder"
+                    ><span>Sitt Min Oo</span></a
+                >
+                —
+                <a href="https://creativecommons.org/licenses/by/4.0/"
+                    >Creative Commons Attribution 4.0</a
+                >, unless otherwise indicated.
+            </p>
+            <a href="https://github.com/s-minoo/eswc2024-rmlweaver-slide"
+                >Source</a
+            >
+        </footer>
     </body>
 </html>
