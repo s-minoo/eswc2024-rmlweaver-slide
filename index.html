@@ -72,8 +72,12 @@
 
         <section class="slide clear">
             <h2 class="title">RMLWeaver-JS in Track 2 on KGC Parameters</h2>
-            <p>Constant memory usage (550 MB)</p>
             <p>Linear execution time increase wrt input size</p>
+            <p>Constant memory usage within all test cases</p>
+            <p>
+                Separation of <b class="highlight">interpretation</b> and
+                <b class="highlight">execution</b>
+            </p>
             <p>Minimal mapping engine implementation changes</p>
         </section>
 
@@ -159,12 +163,67 @@
         <section class="slide clear">
             <div class="ribbon"></div>
             <div class="toc">
-                <p class="highlight">Increasing rows of records</p>
+                <p class="highlight">Increasing rows of records (fixed cols)</p>
                 <p>Triples maps vs Predicate-Object maps</p>
                 <p>Join N-M performance impact</p>
             </div>
         </section>
 
+        <section class="slide clear">
+            <h2 class="title">Linear increase in execution time</h2>
+            <table>
+                <tr>
+                    <th>Test case</th>
+                    <th>Execution time (s)</th>
+                </tr>
+                <tr>
+                    <td>10k rows</td>
+                    <td>2.6</td>
+                </tr>
+                <tr>
+                    <td>100k rows</td>
+                    <td>13.5</td>
+                </tr>
+                <tr>
+                    <td>1M rows</td>
+                    <td>112.0</td>
+                </tr>
+                <tr>
+                    <td>10M rows</td>
+                    <td>1116.4</td>
+                </tr>
+            </table>
+        </section>
+
+        <section class="slide clear">
+            <h2 class="title">Constant memory usage of around 500MB</h2>
+
+            <table>
+                <tr>
+                    <th>Test case</th>
+                    <th>Max RAM usage (MB)</th>
+                </tr>
+
+                <tr>
+                    <td>10k rows</td>
+                    <td>476</td>
+                </tr>
+                <tr>
+                    <td>100k rows</td>
+                    <td>485</td>
+                </tr>
+
+                <tr>
+                    <td>1M rows</td>
+                    <td>505</td>
+                </tr>
+
+                <tr>
+                    <td>10M rows</td>
+                    <td>544</td>
+                </tr>
+            </table>
+        </section>
         <!-- TODO: Insert slide for increasing rows of records <24-05-24, yourname> -->
 
         <section class="slide clear">
