@@ -1,3 +1,9 @@
+.shower {
+    --color-key: rgb(50, 130, 50);
+    --color-secondary: rgb(0, 86, 153);
+    --color-dark: rgb(75, 75, 75);
+}
+
 .center-container {
     display: flex;
     justify-content: center;
@@ -10,12 +16,6 @@ img {
 
 .container {
     display: flex;
-}
-
-.shower {
-    --color-key: rgb(68, 130, 72);
-    --color-secondary: rgb(0, 86, 153);
-    --color-dark: rgb(75, 75, 75);
 }
 
 .ribbon {
@@ -55,6 +55,10 @@ img {
 .slide .toc {
     margin-top: 50px;
     color: var(--color-medium);
+}
+
+.slide .toc p {
+    font-size: 1.3em;
 }
 
 .slide .highlight {
