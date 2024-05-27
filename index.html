@@ -81,7 +81,6 @@
                 Separation of <b class="highlight">interpretation</b> and
                 <b class="highlight">execution</b>
             </p>
-            <p>Minimal mapping engine implementation changes</p>
         </section>
 
         <section class="slide clear">
@@ -120,6 +119,26 @@
                 </figure>
             </div>
         </section>
+
+        <section class="slide clear">
+            <h2 class="title">Optimizations at 2 independent steps</h2>
+            <div class="next">
+                <p class="mainpoint">Mapping plan optimizations</p>
+
+                <p class="sub">
+                    i.e mapping partitions, heuristic-based optimization
+                </p>
+                <p class="sub">Morph-KGC, SDM-RDFizer</p>
+                <p class="sub">No changes required on the mapping engine</p>
+            </div>
+
+            <div class="next">
+                <p class="mainpoint">Micro optimizations on mapping engine</p>
+                <p class="sub">Vectorized operations in mapping operators</p>
+                <p class="sub">Joins optimizations</p>
+            </div>
+        </section>
+
         <section class="slide clear">
             <h2 class="title">Algebraic mapping plan</h2>
             <figure>
@@ -270,7 +289,7 @@
             <h2 class="title">
                 Possible fix by merging semantically similar sources
             </h2>
-            <figure style="text-align: center; height:80%">
+            <figure style="text-align: center; height: 80%">
                 <img src="./figures/source_merge.svg" style="height: 80%" />
             </figure>
         </section>
